@@ -1,0 +1,351 @@
+Gen: 2500
+Mutation Rate: 10.6675%
+Current Performance: 99.8704%
+Gen's Avg Score: 16621.4815 / Best Avg Score: 14714.416 / Best Score: 11883.4927
+Gen's Avg Locations found: 14.669 / Gen's Most Locations Found: 15
+Gen's time: 36.8449ms. / Avg Gen Time: 37.7558ms.
+EEE-KKK-DDD-BBB-CCC-MMM-NNN-JJJ-AAA-FFF-LLL-OOO-III-HHH-GGG
+best solution found: 15 locations / 11883.4927 Total Distance / 11883.4927 fitness score.
+Denver CO - Boise ID - Seattle WA - Beverly Hills CA - Las Vegas NV - San Antonio TX - New Orleans LA - Orlando FL - Memphis TN - Chicago IL - Minneapolis MN - Pittsburgh PA - Richmond VA - Brooklyn NY - Portland ME
+
+
+Gen: 5000/5000 - 100%
+Mutation Rate: 10.6716%
+Current Performance: 99.615%
+Gen's Avg Score: 22612.1152 / Best Avg Score: 16326.6733 / Best Score: 11478.0687
+Gen's Avg Locations found: 14.0925 / Gen's Most Locations Found: 15
+Gen's time: 35.858ms. / Avg Gen Time: 38.5788ms. / Total Time: 192.8942 s.
+DDD-KKK-BBB-CCC-EEE-LLL-MMM-NNN-JJJ-AAA-FFF-OOO-III-HHH-GGG
+best solution found: 15 locations / 11478.0687 Total Distance / 11478.0687 fitness score.
+Seattle WA - Boise ID - Beverly Hills CA - Las Vegas NV - Denver CO - Minneapolis MN - San Antonio TX - New Orleans LA - Orlando FL - Memphis TN - Chicago IL - Pittsburgh PA - Richmond VA - Brooklyn NY - Portland ME
+
+---------------------------------------------------------------
+Gen: 5000/5000 - 100%
+Mutation Rate: 10.6711%
+Current Performance: 99.9855%
+Gen's Avg Score: 16072.1169 / Best Avg Score: 15842.3804 / Best Score: 11098.9375
+Gen's Avg Locations found: 14.858 / Gen's Most Locations Found: 15
+Gen's time: 37.7303ms. / Avg Gen Time: 38.2521ms. / Total Time: 191.2605 s.
+DDD-KKK-CCC-BBB-EEE-MMM-NNN-AAA-LLL-FFF-OOO-GGG-HHH-III-JJJ
+best solution found: 15 locations / 11098.9375 Total Distance / 11098.9375 fitness score.
+Seattle WA - Boise ID - Las Vegas NV - Beverly Hills CA - Denver CO - San Antonio TX - New Orleans LA - Memphis TN - Minneapolis MN - Chicago IL - Pittsburgh PA - Portland ME - Brooklyn NY - Richmond VA - Orlando FL
+
+---------------------------------------------------------------
+Gen: 5000/5000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6642%
+Current Performance: 99.9401%
+Gen's Avg Score: 14734.0643 / Best Avg Score: 13901.441 / Best Score: 10988.1757
+Gen's Avg Locations found: 14.8155 / Gen's Most Locations Found: 15
+Gen's time: 42.1291ms. / Avg Gen Time: 38.745ms. / Total Time: 193.7249 s.
+HHH-GGG-OOO-III-JJJ-NNN-MMM-AAA-FFF-LLL-EEE-CCC-BBB-KKK-DDD
+best solution found: 15 locations / 10988.1757 Total Distance / 10988.1757 fitness score.
+Brooklyn NY - Portland ME - Pittsburgh PA - Richmond VA - Orlando FL - New Orleans LA - San Antonio TX - Memphis TN - Chicago IL - Minneapolis MN - Denver CO - Las Vegas NV - Beverly Hills CA - Boise ID - Seattle WA
+
+---------------------------------------------------------------
+Gen: 5000/5000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6584%
+Current Performance: 99.8629%
+Gen's Avg Score: 20779.7811 / Best Avg Score: 18274.7678 / Best Score: 11644.9459
+Gen's Avg Locations found: 14.3675 / Gen's Most Locations Found: 15
+Gen's time: 40.3868ms. / Avg Gen Time: 42.9244ms. / Total Time: 214.6219 s.
+GGG-HHH-III-JJJ-NNN-MMM-AAA-OOO-FFF-LLL-EEE-CCC-BBB-DDD-KKK
+best solution found: 15 locations / 11644.9459 Total Distance / 11644.9459 fitness score.
+Portland ME - Brooklyn NY - Richmond VA - Orlando FL - New Orleans LA - San Antonio TX - Memphis TN - Pittsburgh PA - Chicago IL - Minneapolis MN - Denver CO - Las Vegas NV - Beverly Hills CA - Seattle WA - Boise ID
+
+---------------------------------------------------------------
+Gen: 5000/5000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6706%
+Current Performance: 99.713%
+Gen's Avg Score: 17333.1739 / Best Avg Score: 13467.3856 / Best Score: 11143.5316
+Gen's Avg Locations found: 14.432 / Gen's Most Locations Found: 15
+Gen's time: 37.6199ms. / Avg Gen Time: 37.8706ms. / Total Time: 189.3529 s.
+CCC-BBB-DDD-KKK-EEE-LLL-FFF-AAA-MMM-NNN-JJJ-III-OOO-HHH-GGG
+best solution found: 15 locations / 11143.5316 Total Distance / 11143.5316 fitness score.
+Las Vegas NV - Beverly Hills CA - Seattle WA - Boise ID - Denver CO - Minneapolis MN - Chicago IL - Memphis TN - San Antonio TX - New Orleans LA - Orlando FL - Richmond VA - Pittsburgh PA - Brooklyn NY - Portland ME
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6644%
+Current Performance: 99.8292%
+Gen's Avg Score: 15768.474 / Best Avg Score: 13467.7796 / Best Score: 10984.2763
+Gen's Avg Locations found: 14.6645 / Gen's Most Locations Found: 15
+Gen's time: 36.2521ms. / Avg Gen Time: 39.5983ms. / Total Time: 395.983 s.
+LLL-FFF-OOO-HHH-GGG-III-JJJ-NNN-AAA-MMM-EEE-CCC-BBB-KKK-DDD
+best solution found: 15 locations / 10984.2763 Total Distance / 10984.2763 fitness score.
+Minneapolis MN - Chicago IL - Pittsburgh PA - Brooklyn NY - Portland ME - Richmond VA - Orlando FL - New Orleans LA - Memphis TN - San Antonio TX - Denver CO - Las Vegas NV - Beverly Hills CA - Boise ID - Seattle WA
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.667%
+Current Performance: 99.3999%
+Gen's Avg Score: 24504.2293 / Best Avg Score: 15314.3991 / Best Score: 10903.8581
+Gen's Avg Locations found: 13.614 / Gen's Most Locations Found: 15
+Gen's time: 35.5599ms. / Avg Gen Time: 40.0246ms. / Total Time: 400.2463 s.
+DDD-KKK-BBB-CCC-EEE-MMM-AAA-NNN-JJJ-III-HHH-GGG-OOO-FFF-LLL
+best solution found: 15 locations / 10903.8581 Total Distance / 10903.8581 fitness score.
+Seattle WA - Boise ID - Beverly Hills CA - Las Vegas NV - Denver CO - San Antonio TX - Memphis TN - New Orleans LA - Orlando FL - Richmond VA - Brooklyn NY - Portland ME - Pittsburgh PA - Chicago IL - Minneapolis MN
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6653%
+Current Performance: 99.9198%
+Gen's Avg Score: 14689.2799 / Best Avg Score: 13598.597 / Best Score: 11097.4263
+Gen's Avg Locations found: 14.753 / Gen's Most Locations Found: 15
+Gen's time: 41.2953ms. / Avg Gen Time: 38.6995ms. / Total Time: 386.9949 s.
+MMM-NNN-AAA-JJJ-III-OOO-HHH-GGG-FFF-LLL-EEE-CCC-BBB-KKK-DDD
+best solution found: 15 locations / 11097.4263 Total Distance / 11097.4263 fitness score.
+San Antonio TX - New Orleans LA - Memphis TN - Orlando FL - Richmond VA - Pittsburgh PA - Brooklyn NY - Portland ME - Chicago IL - Minneapolis MN - Denver CO - Las Vegas NV - Beverly Hills CA - Boise ID - Seattle WA
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.663%
+Current Performance: 99.9213%
+Gen's Avg Score: 13119.4166 / Best Avg Score: 12162.0515 / Best Score: 10764.6559
+Gen's Avg Locations found: 14.8225 / Gen's Most Locations Found: 15
+Gen's time: 39.6656ms. / Avg Gen Time: 38.6656ms. / Total Time: 386.6555 s.
+DDD-KKK-BBB-CCC-EEE-MMM-NNN-JJJ-AAA-LLL-FFF-OOO-III-HHH-GGG
+best solution found: 15 locations / 10764.6559 Total Distance / 10764.6559 fitness score. / Gen Found: 614
+Seattle WA - Boise ID - Beverly Hills CA - Las Vegas NV - Denver CO - San Antonio TX - New Orleans LA - Orlando FL - Memphis TN - Minneapolis MN - Chicago IL - Pittsburgh PA - Richmond VA - Brooklyn NY - Portland ME
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6658%
+Current Performance: 99.7931%
+Gen's Avg Score: 16121.8906 / Best Avg Score: 13358.0139 / Best Score: 10616.3737
+Gen's Avg Locations found: 14.503 / Gen's Most Locations Found: 15
+Gen's time: 37.6433ms. / Avg Gen Time: 37.312ms. / Total Time: 373.1199 s.
+GGG-HHH-OOO-III-JJJ-NNN-MMM-AAA-FFF-LLL-EEE-CCC-BBB-KKK-DDD
+best solution found: 15 locations / 10616.3737 Total Distance / 10616.3737 fitness score. / Gen Found: 7691
+Portland ME - Brooklyn NY - Pittsburgh PA - Richmond VA - Orlando FL - New Orleans LA - San Antonio TX - Memphis TN - Chicago IL - Minneapolis MN - Denver CO - Las Vegas NV - Beverly Hills CA - Boise ID - Seattle WA
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6665%
+Current Performance: 99.8538%
+Gen's Avg Score: 18649.7154 / Best Avg Score: 16270.764 / Best Score: 12809.6594
+Gen's Avg Locations found: 14.574 / Gen's Most Locations Found: 15
+Gen's time: 36.4585ms. / Avg Gen Time: 37.5697ms. / Total Time: 375.6975 s.
+GGG-HHH-OOO-LLL-EEE-KKK-DDD-BBB-CCC-MMM-NNN-AAA-FFF-III-JJJ
+best solution found: 15 locations / 12809.6594 Total Distance / 12809.6594 fitness score. / Gen Found: 2001
+Portland ME - Brooklyn NY - Pittsburgh PA - Minneapolis MN - Denver CO - Boise ID - Seattle WA - Beverly Hills CA - Las Vegas NV - San Antonio TX - New Orleans LA - Memphis TN - Chicago IL - Richmond VA - Orlando FL
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6653%
+Current Performance: 99.0509%
+Gen's Avg Score: 25499.8209 / Best Avg Score: 13082.9323 / Best Score: 11410.2569
+Gen's Avg Locations found: 13.4665 / Gen's Most Locations Found: 15
+Gen's time: 39.7563ms. / Avg Gen Time: 37.286ms. / Total Time: 372.8598 s.
+LLL-FFF-GGG-HHH-III-OOO-JJJ-NNN-AAA-MMM-EEE-CCC-BBB-KKK-DDD
+best solution found: 15 locations / 11410.2569 Total Distance / 11410.2569 fitness score. / Gen Found: 2054
+Minneapolis MN - Chicago IL - Portland ME - Brooklyn NY - Richmond VA - Pittsburgh PA - Orlando FL - New Orleans LA - Memphis TN - San Antonio TX - Denver CO - Las Vegas NV - Beverly Hills CA - Boise ID - Seattle WA
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.669%
+Current Performance: 99.1861%
+Gen's Avg Score: 26207.698 / Best Avg Score: 14447.9126 / Best Score: 10616.3737
+Gen's Avg Locations found: 13.607 / Gen's Most Locations Found: 15
+Gen's time: 38.1918ms. / Avg Gen Time: 38.5409ms. / Total Time: 385.4089 s.
+GGG-HHH-OOO-III-JJJ-NNN-MMM-AAA-FFF-LLL-EEE-CCC-BBB-KKK-DDD
+best solution found: 15 locations / 10616.3737 Total Distance / 10616.3737 fitness score. / Gen Found: 180
+Portland ME - Brooklyn NY - Pittsburgh PA - Richmond VA - Orlando FL - New Orleans LA - San Antonio TX - Memphis TN - Chicago IL - Minneapolis MN - Denver CO - Las Vegas NV - Beverly Hills CA - Boise ID - Seattle WA
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6668%
+Current Performance: 98.9263%
+Gen's Avg Score: 29417.0515 / Best Avg Score: 14185.9574 / Best Score: 11637.8027
+Gen's Avg Locations found: 13.298 / Gen's Most Locations Found: 15
+Gen's time: 44.7466ms. / Avg Gen Time: 48.9014ms. / Total Time: 489.0139 s.
+LLL-FFF-OOO-GGG-HHH-III-AAA-NNN-JJJ-MMM-EEE-CCC-BBB-KKK-DDD
+best solution found: 15 locations / 11637.8027 Total Distance / 11637.8027 fitness score. / Gen Found: 1995
+Minneapolis MN - Chicago IL - Pittsburgh PA - Portland ME - Brooklyn NY - Richmond VA - Memphis TN - New Orleans LA - Orlando FL - San Antonio TX - Denver CO - Las Vegas NV - Beverly Hills CA - Boise ID - Seattle WA
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6601%
+Current Performance: 99.7783%
+Gen's Avg Score: 17469.3499 / Best Avg Score: 14298.6451 / Best Score: 11453.449
+Gen's Avg Locations found: 14.5045 / Gen's Most Locations Found: 15
+Gen's time: 37.0489ms. / Avg Gen Time: 37.9932ms. / Total Time: 379.9316 s.
+MMM-NNN-JJJ-III-GGG-HHH-OOO-FFF-LLL-AAA-EEE-CCC-BBB-KKK-DDD
+best solution found: 15 locations / 11453.449 Total Distance / 11453.449 fitness score. / Gen Found: 460
+San Antonio TX - New Orleans LA - Orlando FL - Richmond VA - Portland ME - Brooklyn NY - Pittsburgh PA - Chicago IL - Minneapolis MN - Memphis TN - Denver CO - Las Vegas NV - Beverly Hills CA - Boise ID - Seattle WA
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6691%
+Current Performance: 99.9423%
+Gen's Avg Score: 16115.0484 / Best Avg Score: 15235.4307 / Best Score: 11993.9144
+Gen's Avg Locations found: 14.8075 / Gen's Most Locations Found: 15
+Gen's time: 38.7817ms. / Avg Gen Time: 41.1632ms. / Total Time: 411.6324 s.
+BBB-CCC-KKK-DDD-EEE-LLL-OOO-III-HHH-GGG-FFF-AAA-MMM-NNN-JJJ
+best solution found: 15 locations / 11993.9144 Total Distance / 11993.9144 fitness score. / Gen Found: 4500
+Beverly Hills CA - Las Vegas NV - Boise ID - Seattle WA - Denver CO - Minneapolis MN - Pittsburgh PA - Richmond VA - Brooklyn NY - Portland ME - Chicago IL - Memphis TN - San Antonio TX - New Orleans LA - Orlando FL
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6637%
+Current Performance: 99.9576%
+Gen's Avg Score: 17741.9513 / Best Avg Score: 17020.455 / Best Score: 11940.3202
+Gen's Avg Locations found: 14.8075 / Gen's Most Locations Found: 15
+Gen's time: 37.3243ms. / Avg Gen Time: 40.2299ms. / Total Time: 402.2994 s.
+GGG-HHH-OOO-III-JJJ-NNN-MMM-AAA-FFF-LLL-EEE-DDD-BBB-CCC-KKK
+best solution found: 15 locations / 11940.3202 Total Distance / 11940.3202 fitness score. / Gen Found: 4701
+Portland ME - Brooklyn NY - Pittsburgh PA - Richmond VA - Orlando FL - New Orleans LA - San Antonio TX - Memphis TN - Chicago IL - Minneapolis MN - Denver CO - Seattle WA - Beverly Hills CA - Las Vegas NV - Boise ID
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6605%
+Current Performance: 99.9141%
+Gen's Avg Score: 14427.7874 / Best Avg Score: 13286.5929 / Best Score: 11054.9303
+Gen's Avg Locations found: 14.814 / Gen's Most Locations Found: 15
+Gen's time: 37.6216ms. / Avg Gen Time: 41.5915ms. / Total Time: 415.915 s.
+MMM-AAA-NNN-JJJ-III-OOO-HHH-GGG-FFF-LLL-EEE-CCC-BBB-KKK-DDD
+best solution found: 15 locations / 11054.9303 Total Distance / 11054.9303 fitness score. / Gen Found: 369
+San Antonio TX - Memphis TN - New Orleans LA - Orlando FL - Richmond VA - Pittsburgh PA - Brooklyn NY - Portland ME - Chicago IL - Minneapolis MN - Denver CO - Las Vegas NV - Beverly Hills CA - Boise ID - Seattle WA
+
+---------------------------------------------------------------
+Gen: 20000/20000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6663%
+Current Performance: 99.0845%
+Gen's Avg Score: 25477.8905 / Best Avg Score: 13300.9001 / Best Score: 10751.34
+Gen's Avg Locations found: 13.441 / Gen's Most Locations Found: 15
+Gen's time: 37.3079ms. / Avg Gen Time: 36.8041ms. / Total Time: 736.0826 s.
+DDD-KKK-BBB-CCC-EEE-LLL-FFF-OOO-GGG-HHH-III-JJJ-NNN-AAA-MMM
+best solution found: 15 locations / 10751.34 Total Distance / 10751.34 fitness score. / Gen Found: 1021
+Seattle WA - Boise ID - Beverly Hills CA - Las Vegas NV - Denver CO - Minneapolis MN - Chicago IL - Pittsburgh PA - Portland ME - Brooklyn NY - Richmond VA - Orlando FL - New Orleans LA - Memphis TN - San Antonio TX
+
+---------------------------------------------------------------
+Gen: 20000/20000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6655%
+Current Performance: 98.8123%
+Gen's Avg Score: 36393.2641 / Best Avg Score: 16635.2736 / Best Score: 12894.815
+Gen's Avg Locations found: 17.63 / Gen's Most Locations Found: 20
+Gen's time: 56.5992ms. / Avg Gen Time: 58.5596ms. / Total Time: 1171.1914 s.
+MMM-NNN-JJJ-SSS-AAA-EEE-RRR-CCC-BBB-TTT-DDD-KKK-PPP-QQQ-LLL-FFF-OOO-III-HHH-GGG
+best solution found: 20 locations / 12894.815 Total Distance / 12894.815 fitness score. / Gen Found: 4630
+San Antonio TX - New Orleans LA - Orlando FL - Charleston SC - Memphis TN - Denver CO - Santa Fe NM - Las Vegas NV - Beverly Hills CA - San Francisco CA - Seattle WA - Boise ID - Billings MT - Bismark ND - Minneapolis MN - Chicago IL - Pittsburgh PA - Richmond VA - Brooklyn NY - Portland ME
+
+---------------------------------------------------------------
+Gen: 20000/20000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6699%
+Current Performance: 99.8277%
+Gen's Avg Score: 29566.9427 / Best Avg Score: 25222.3068 / Best Score: 9205.1479
+Gen's Avg Locations found: 18.0545 / Gen's Most Locations Found: 20
+Gen's time: 75.691ms. / Avg Gen Time: 74.5801ms. / Total Time: 1491.6023 s.
+OOO-FFF-LLL-QQQ-PPP-CCC-BBB-TTT-DDD-KKK-EEE-RRR-MMM-AAA-NNN-JJJ-SSS-III-GGG-HHH
+best solution found: 20 locations / 9205.1479 Total Distance / 9205.1479 fitness score. / Gen Found: 11285
+Pittsburgh PA - Chicago IL - Minneapolis MN - Bismark ND - Billings MT - Las Vegas NV - Beverly Hills CA - San Francisco CA - Seattle WA - Boise ID - Denver CO - Santa Fe NM - San Antonio TX - Memphis TN - New Orleans LA - Orlando FL - Charleston SC - Richmond VA - Portland ME - Brooklyn NY
+
+---------------------------------------------------------------
+Gen: 50000/50000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6656%
+Current Performance: 99.5221%
+Gen's Avg Score: 30742.5651 / Best Avg Score: 20801.5378 / Best Score: 8523.3091
+Gen's Avg Locations found: 17.823 / Gen's Most Locations Found: 20
+Gen's time: 61.7973ms. / Avg Gen Time: 58.3175ms. / Total Time: 2915.8731 s.
+NNN-AAA-MMM-RRR-EEE-CCC-BBB-TTT-DDD-KKK-PPP-QQQ-LLL-FFF-OOO-GGG-HHH-III-SSS-JJJ
+best solution found: 20 locations / 8523.3091 Total Distance / 8523.3091 fitness score. / Gen Found: 29245
+New Orleans LA - Memphis TN - San Antonio TX - Santa Fe NM - Denver CO - Las Vegas NV - Beverly Hills CA - San Francisco CA - Seattle WA - Boise ID - Billings MT - Bismark ND - Minneapolis MN - Chicago IL - Pittsburgh PA - Portland ME - Brooklyn NY - Richmond VA - Charleston SC - Orlando FL
+
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6713%
+Current Performance: 99.2037%
+Gen's Avg Score: 29729.1075 / Best Avg Score: 16550.6054 / Best Score: 9436.2124
+Gen's Avg Locations found: 18.1835 / Gen's Most Locations Found: 20
+Gen's time: 58.0422ms. / Avg Gen Time: 60.978ms. / Total Time: 609.7798 s.
+AAA-NNN-JJJ-SSS-III-HHH-GGG-OOO-FFF-LLL-QQQ-PPP-DDD-KKK-CCC-TTT-BBB-RRR-EEE-MMM
+best solution found: 20 locations / 9436.2124 Total Distance / 9436.2124 fitness score. / Gen Found: 9683
+Memphis TN - New Orleans LA - Orlando FL - Charleston SC - Richmond VA - Brooklyn NY - Portland ME - Pittsburgh PA - Chicago IL - Minneapolis MN - Bismark ND - Billings MT - Seattle WA - Boise ID - Las Vegas NV - San Francisco CA - Beverly Hills CA - Santa Fe NM - Denver CO - San Antonio TX
+
+---------------------------------------------------------------
+Gen: 100000/100000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6648%
+Current Performance: 99.6798%
+Gen's Avg Score: 32952.0276 / Best Avg Score: 24960.3062 / Best Score: 8523.3091
+Gen's Avg Locations found: 17.6535 / Gen's Most Locations Found: 20
+Gen's time: 70.6802ms. / Avg Gen Time: 59.767ms. / Total Time: 5976.6999 s.
+SSS-JJJ-NNN-AAA-MMM-RRR-EEE-CCC-BBB-TTT-DDD-KKK-PPP-QQQ-LLL-FFF-OOO-GGG-HHH-III
+best solution found: 20 locations / 8523.3091 Total Distance / 8523.3091 fitness score. / Gen Found: 91212
+Charleston SC - Orlando FL - New Orleans LA - Memphis TN - San Antonio TX - Santa Fe NM - Denver CO - Las Vegas NV - Beverly Hills CA - San Francisco CA - Seattle WA - Boise ID - Billings MT - Bismark ND - Minneapolis MN - Chicago IL - Pittsburgh PA - Portland ME - Brooklyn NY - Richmond VA
+
+---------------------------------------------------------------
+Gen: 100000/100000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6649%
+Current Performance: 99.7455%
+Gen's Avg Score: 32258.9352 / Best Avg Score: 25714.0873 / Best Score: 9124.7297
+Gen's Avg Locations found: 17.6575 / Gen's Most Locations Found: 20
+Gen's time: 56.5627ms. / Avg Gen Time: 61.6569ms. / Total Time: 6165.6906 s.
+SSS-JJJ-NNN-AAA-MMM-RRR-EEE-KKK-DDD-TTT-BBB-CCC-PPP-QQQ-LLL-FFF-OOO-GGG-HHH-III
+best solution found: 20 locations / 9124.7297 Total Distance / 9124.7297 fitness score. / Gen Found: 81676
+Charleston SC - Orlando FL - New Orleans LA - Memphis TN - San Antonio TX - Santa Fe NM - Denver CO - Boise ID - Seattle WA - San Francisco CA - Beverly Hills CA - Las Vegas NV - Billings MT - Bismark ND - Minneapolis MN - Chicago IL - Pittsburgh PA - Portland ME - Brooklyn NY - Richmond VA
+
+---------------------------------------------------------------
+Gen: 100000/100000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6658%
+Current Performance: 98.9756%
+Gen's Avg Score: 32770.6091 / Best Avg Score: 16187.5608 / Best Score: 9778.9081
+Gen's Avg Locations found: 17.8025 / Gen's Most Locations Found: 20
+Gen's time: 56.9293ms. / Avg Gen Time: 58.3937ms. / Total Time: 5839.371 s.
+SSS-HHH-GGG-III-OOO-FFF-LLL-QQQ-CCC-BBB-TTT-DDD-KKK-PPP-EEE-RRR-MMM-NNN-AAA-JJJ
+best solution found: 20 locations / 9778.9081 Total Distance / 9778.9081 fitness score. / Gen Found: 4735
+Charleston SC - Brooklyn NY - Portland ME - Richmond VA - Pittsburgh PA - Chicago IL - Minneapolis MN - Bismark ND - Las Vegas NV - Beverly Hills CA - San Francisco CA - Seattle WA - Boise ID - Billings MT - Denver CO - Santa Fe NM - San Antonio TX - New Orleans LA - Memphis TN - Orlando FL
+
+---------------------------------------------------------------
+Gen: 100000/100000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6665%
+Current Performance: 99.6221%
+Gen's Avg Score: 30127.8794 / Best Avg Score: 21864.665 / Best Score: 9124.7297
+Gen's Avg Locations found: 17.885 / Gen's Most Locations Found: 20
+Gen's time: 56.2831ms. / Avg Gen Time: 58.4695ms. / Total Time: 5846.9469 s.
+CCC-BBB-TTT-DDD-KKK-EEE-RRR-MMM-AAA-NNN-JJJ-SSS-III-HHH-GGG-OOO-FFF-LLL-QQQ-PPP
+best solution found: 20 locations / 9124.7297 Total Distance / 9124.7297 fitness score. / Gen Found: 78846
+Las Vegas NV - Beverly Hills CA - San Francisco CA - Seattle WA - Boise ID - Denver CO - Santa Fe NM - San Antonio TX - Memphis TN - New Orleans LA - Orlando FL - Charleston SC - Richmond VA - Brooklyn NY - Portland ME - Pittsburgh PA - Chicago IL - Minneapolis MN - Bismark ND - Billings MT
+
+---------------------------------------------------------------
+Gen: 250000/250000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 10.6672%
+Current Performance: 98.7091%
+Gen's Avg Score: 32369.2548 / Best Avg Score: 14129.5945 / Best Score: 8523.3091
+Gen's Avg Locations found: 17.667 / Gen's Most Locations Found: 20
+Gen's time: 56.7704ms. / Avg Gen Time: 57.7442ms. / Total Time: 14436.05 s.
+SSS-JJJ-NNN-AAA-MMM-RRR-EEE-CCC-BBB-TTT-DDD-KKK-PPP-QQQ-LLL-FFF-OOO-GGG-HHH-III
+best solution found: 20 locations / 8523.3091 Total Distance / 8523.3091 fitness score. / Gen Found: 164882
+Charleston SC - Orlando FL - New Orleans LA - Memphis TN - San Antonio TX - Santa Fe NM - Denver CO - Las Vegas NV - Beverly Hills CA - San Francisco CA - Seattle WA - Boise ID - Billings MT - Bismark ND - Minneapolis MN - Chicago IL - Pittsburgh PA - Portland ME - Brooklyn NY - Richmond VA
+
+---------------------------------------------------------------
+Gen: 250000/250000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 0%
+Current Performance: 99.0583%
+Gen's Avg Score: 29785.5981 / Best Avg Score: 15339.9563 / Best Score: 8523.3091
+Gen's Avg Locations found: 17.9468 / Gen's Most Locations Found: 20
+Gen's time: 152.2572ms. / Avg Gen Time: 170.1084ms. / Total Time: 42527.095 s.
+AAA-NNN-JJJ-SSS-III-HHH-GGG-OOO-FFF-LLL-QQQ-PPP-KKK-DDD-TTT-BBB-CCC-EEE-RRR-MMM
+best solution found: 20 locations / 8523.3091 Total Distance / 8523.3091 fitness score. / Gen Found: 4320
+Memphis TN - New Orleans LA - Orlando FL - Charleston SC - Richmond VA - Brooklyn NY - Portland ME - Pittsburgh PA - Chicago IL - Minneapolis MN - Bismark ND - Billings MT - Boise ID - Seattle WA - San Francisco CA - Beverly Hills CA - Las Vegas NV - Denver CO - Santa Fe NM - San Antonio TX
+---------------------------------------------------------------
+Gen: 10000/10000 - 100% - Est. Time Remaining: 0s.
+Mutation Rate: 14.9996%
+Current Performance: 99.7001%
+Gen's Avg Score: 24406.8399 / Best Avg Score: 18776.4237 / Best Score: 9184.1589
+Gen's Avg Locations found: 18.8016 / Gen's Most Locations Found: 20
+Gen's time: 187.078ms. / Avg Gen Time: 198.2076ms. / Total Time: 1982.0761 s.
+EEE-RRR-MMM-AAA-NNN-JJJ-SSS-III-HHH-GGG-OOO-FFF-LLL-QQQ-PPP-DDD-TTT-BBB-CCC-KKK
+best solution found: 20 locations / 9184.1589 Total Distance / 9184.1589 fitness score. / Gen Found: 8820
+Denver CO - Santa Fe NM - San Antonio TX - Memphis TN - New Orleans LA - Orlando FL - Charleston SC - Richmond VA - Brooklyn NY - Portland ME - Pittsburgh PA - Chicago IL - Minneapolis MN - Bismark ND - Billings MT - Seattle WA - San Francisco CA - Beverly Hills CA - Las Vegas NV - Boise ID
+DUPLICATE_LOCATION_SCORE_PENALTY => 5000
+THIRD_MUTATION_PERCENTAGE => 10.0
+SUPER_INDIVIDUAL_BONUS_FIRST => 10000
+SUPER_INDIVIDUAL_BONUS_THIRD => 1000
+SECOND_MUTATION_PERCENTAGE => 15.0
+SUPER_INDIVIDUAL_BONUS_SECOND => 5000
+NUMBER_OF_GENERATIONS_TO_RUN => 10000
+NUMBER_OF_CHROMOSOMES_PER_GENERATION => 5000
+CHROMOSOME_LENGTH_MULTIPLIER => 8
+FIRST_MUTATION_PERCENTAGE => 20.0
+CHROMOSOME_SHUFFLE_ODDS_MULTIPLIER => 2.0
+
+
