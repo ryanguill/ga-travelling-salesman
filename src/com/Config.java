@@ -187,40 +187,17 @@ public class Config {
 
 		Properties prop = new Properties();
 
-		prop.setProperty(
-				ConfigPropertyKeys.NUMBER_OF_CHROMOSOMES_PER_GENERATION
-						.toString(), Integer
-						.toString(NUMBER_OF_CHROMOSOMES_PER_GENERATION));
-		prop.setProperty(
-				ConfigPropertyKeys.NUMBER_OF_GENERATIONS_TO_RUN.toString(),
-				Integer.toString(NUMBER_OF_GENERATIONS_TO_RUN));
-		prop.setProperty(
-				ConfigPropertyKeys.DUPLICATE_LOCATION_SCORE_PENALTY.toString(),
-				Integer.toString(DUPLICATE_LOCATION_SCORE_PENALTY));
-		prop.setProperty(
-				ConfigPropertyKeys.CHROMOSOME_LENGTH_MULTIPLIER.toString(),
-				Integer.toString(CHROMOSOME_LENGTH_MULTIPLIER));
-		prop.setProperty(ConfigPropertyKeys.CHROMOSOME_SHUFFLE_ODDS_MULTIPLIER
-				.toString(), Double
-				.toString(CHROMOSOME_SHUFFLE_ODDS_MULTIPLIER));
-		prop.setProperty(
-				ConfigPropertyKeys.SUPER_INDIVIDUAL_BONUS_FIRST.toString(),
-				Integer.toString(SUPER_INDIVIDUAL_BONUS_FIRST));
-		prop.setProperty(
-				ConfigPropertyKeys.SUPER_INDIVIDUAL_BONUS_SECOND.toString(),
-				Integer.toString(SUPER_INDIVIDUAL_BONUS_SECOND));
-		prop.setProperty(
-				ConfigPropertyKeys.SUPER_INDIVIDUAL_BONUS_THIRD.toString(),
-				Integer.toString(SUPER_INDIVIDUAL_BONUS_THIRD));
-		prop.setProperty(
-				ConfigPropertyKeys.FIRST_MUTATION_PERCENTAGE.toString(),
-				Double.toString(FIRST_MUTATION_PERCENTAGE));
-		prop.setProperty(
-				ConfigPropertyKeys.SECOND_MUTATION_PERCENTAGE.toString(),
-				Double.toString(SECOND_MUTATION_PERCENTAGE));
-		prop.setProperty(
-				ConfigPropertyKeys.THIRD_MUTATION_PERCENTAGE.toString(),
-				Double.toString(THIRD_MUTATION_PERCENTAGE));
+		prop.setProperty(ConfigPropertyKeys.NUMBER_OF_CHROMOSOMES_PER_GENERATION.toString(), Integer.toString(NUMBER_OF_CHROMOSOMES_PER_GENERATION));
+		prop.setProperty(ConfigPropertyKeys.NUMBER_OF_GENERATIONS_TO_RUN.toString(), Integer.toString(NUMBER_OF_GENERATIONS_TO_RUN));
+		prop.setProperty(ConfigPropertyKeys.DUPLICATE_LOCATION_SCORE_PENALTY.toString(), Integer.toString(DUPLICATE_LOCATION_SCORE_PENALTY));
+		prop.setProperty(ConfigPropertyKeys.CHROMOSOME_LENGTH_MULTIPLIER.toString(), Integer.toString(CHROMOSOME_LENGTH_MULTIPLIER));
+		prop.setProperty(ConfigPropertyKeys.CHROMOSOME_SHUFFLE_ODDS_MULTIPLIER.toString(), Double.toString(CHROMOSOME_SHUFFLE_ODDS_MULTIPLIER));
+		prop.setProperty(ConfigPropertyKeys.SUPER_INDIVIDUAL_BONUS_FIRST.toString(), Integer.toString(SUPER_INDIVIDUAL_BONUS_FIRST));
+		prop.setProperty(ConfigPropertyKeys.SUPER_INDIVIDUAL_BONUS_SECOND.toString(), Integer.toString(SUPER_INDIVIDUAL_BONUS_SECOND));
+		prop.setProperty(ConfigPropertyKeys.SUPER_INDIVIDUAL_BONUS_THIRD.toString(), Integer.toString(SUPER_INDIVIDUAL_BONUS_THIRD));
+		prop.setProperty(ConfigPropertyKeys.FIRST_MUTATION_PERCENTAGE.toString(), Double.toString(FIRST_MUTATION_PERCENTAGE));
+		prop.setProperty(ConfigPropertyKeys.SECOND_MUTATION_PERCENTAGE.toString(), Double.toString(SECOND_MUTATION_PERCENTAGE));
+		prop.setProperty(ConfigPropertyKeys.THIRD_MUTATION_PERCENTAGE.toString(), Double.toString(THIRD_MUTATION_PERCENTAGE));
 
 		return prop;
 	}
