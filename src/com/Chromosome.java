@@ -24,7 +24,7 @@ public class Chromosome implements Comparable<Chromosome> {
 	}
 
 	public String toString() {
-		String out = "";
+		StringBuilder out = new StringBuilder();
 		int i = 0;
 
 		for (i = 0; i < arrGenes.size(); i++) {
@@ -32,19 +32,19 @@ public class Chromosome implements Comparable<Chromosome> {
 
 			if (tempGene == null) {
 				if (i != arrGenes.size() - 1) {
-					out += "-";
+					out.append("-");
 				}
 			} else {
-				out += tempGene.toString();
+				out.append(tempGene.toString());
 
 				if (i != arrGenes.size() - 1) {
-					out += "-";
+					out.append("-");
 				}
 			}
 
 		}
 
-		return out;
+		return out.toString();
 
 	}
 
@@ -124,7 +124,7 @@ public class Chromosome implements Comparable<Chromosome> {
 	}
 
 	public String phenotypeToString() {
-		String out = "";
+		StringBuilder out = new StringBuilder();
 		int i = 0;
 
 		for (i = 0; i < arrPhenotype.size(); i++) {
@@ -132,19 +132,19 @@ public class Chromosome implements Comparable<Chromosome> {
 
 			if (tempGene == null) {
 				if (i != arrPhenotype.size() - 1) {
-					out += "-";
+					out.append("-");
 				}
 			} else {
-				out += tempGene.toString();
+				out.append(tempGene.toString());
 
 				if (i != arrPhenotype.size() - 1) {
-					out += "-";
+					out.append("-");
 				}
 			}
 
 		}
 
-		return out;
+		return out.toString();
 	}
 
 	public boolean hasNullGene() {

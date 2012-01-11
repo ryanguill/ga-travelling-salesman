@@ -1,11 +1,11 @@
 package com;
 
+import static com.Chromosome.randRange;
+import static com.ZipLocation.getLatLongDistance;
+
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collections;
-
-import static com.Chromosome.randRange;
-import static com.ZipLocation.getLatLongDistance;
 
 public class GeneticAlgorithmTravellingSalesman {
 
@@ -201,10 +201,9 @@ public class GeneticAlgorithmTravellingSalesman {
 
 		// out("Least Total Distance: " + leastTotalDistance);
 
-		double currentPeformance = (currentAverageScore / bestAverageScore) - 1;
-		double currentPeformance2 = 100 - currentPeformance;
-
-		out("Current Performance: " + nf.format(currentPeformance2) + "%");
+		double currentPeformance = 100 - ((currentAverageScore / bestAverageScore) - 1);
+		
+		out("Current Performance: " + nf.format(currentPeformance) + "%");
 		out("Gen's Avg Score: " + nf.format(currentAverageScore) + " / Best Avg Score: " + nf.format(bestAverageScore) + " / Best Score: "
 				+ nf.format(bestIndividual.getFitnessScore()));
 		out("Gen's Avg Locations found: " + currentAverageLocationsFound + " / Gen's Most Locations Found: " + mostGenerationLocationsFound);
@@ -235,15 +234,53 @@ public class GeneticAlgorithmTravellingSalesman {
 	}
 
 	public Gene generateRandomGene() {
-
+		
+		/*
+		ArrayList<Gene> al = new ArrayList<Gene>();
+		
+		al.add(new Gene("AAA"));
+		al.add(new Gene("BBB"));
+		al.add(new Gene("CCC"));
+		al.add(new Gene("DDD"));
+		al.add(new Gene("EEE"));
+		al.add(new Gene("FFF"));
+		al.add(new Gene("GGG"));
+		al.add(new Gene("HHH"));
+		al.add(new Gene("III"));
+		al.add(new Gene("JJJ"));
+		al.add(new Gene("KKK"));
+		al.add(new Gene("LLL"));
+		al.add(new Gene("MMM"));
+		al.add(new Gene("NNN"));
+		al.add(new Gene("OOO"));
+		al.add(new Gene("PPP"));
+		al.add(new Gene("QQQ"));
+		al.add(new Gene("RRR"));
+		al.add(new Gene("SSS"));
+		al.add(new Gene("TTT"));
+		
+		return al.get(randRange(0, al.size()-1));
+		*/
+		
+		/*
 		String out = "";
 
 		for (int i = 0; i < 3; i++) {
 			// out += (char) randRange(65,90);
 			out += (char) randRange(65, 90);
 		}
-
+		
 		return new Gene(out);
+		*/
+		
+		StringBuilder out = new StringBuilder();
+		
+		for (int i = 0; i < 3; i++) {
+			// out += (char) randRange(65,90);
+			out.append((char) randRange(65, 90));
+		}
+		
+		return new Gene(out.toString());
 	}
 
 	public Chromosome scoreChromosomeFitness(Chromosome c) {
@@ -386,19 +423,25 @@ public class GeneticAlgorithmTravellingSalesman {
 		// first we need to get the total score of the chromosomes selected for
 		// mating
 		double totalScore = 0;
-		Chromosome c;
-		int i;
+		
 		int chromosomesForMatingLength = chromosomesForMating.size();
 
+			/*
 		for (i = 0; i < chromosomesForMatingLength; i++) {
 			c = chromosomesForMating.get(i);
 
 			totalScore += c.getInvertedFitnessScore();
 		}
-
-		for (i = 0; i < chromosomesForMatingLength; i++) {
-			c = chromosomesForMating.get(i);
-
+		*/
+		
+		for ( Chromosome c : chromosomesForMating ) {
+			totalScore += c.getInvertedFitnessScore();
+		}
+		
+		int i = 0;
+		
+		for ( Chromosome c : chromosomesForMating ) {
+			
 			switch (i) {
 
 			case 0:
@@ -429,6 +472,8 @@ public class GeneticAlgorithmTravellingSalesman {
 			for (int distIndex = 0; distIndex < c.getDistribution(); distIndex++) {
 				distributedChromosomesForMating.add(c);
 			}
+			
+			i++;
 
 		}
 
@@ -440,7 +485,7 @@ public class GeneticAlgorithmTravellingSalesman {
 
 			// now pick another random number between 0 and length of
 			// chromosomesForMating - 1 for the second individual
-			// but we have to make sure it isnt the same as the first pick
+			// but we have to make sure it isn't the same as the first pick
 			int randomPick2 = -1;
 
 			while (randomPick2 == -1) {
@@ -549,7 +594,7 @@ public class GeneticAlgorithmTravellingSalesman {
 
 	}
 
-	private String timeFormat(long seconds) {
+	private static String timeFormat(long seconds) {
 		return String.format("%d:%02d:%02d", seconds / 3600, (seconds % 3600) / 60, (seconds % 60));
 	}
 
