@@ -9,10 +9,10 @@ import java.util.Collections;
 
 public class GeneticAlgorithmTravellingSalesman {
 
-	private Config config;
+	private final Config config;
 
 	private ArrayList<ZipLocation> zipLocations = new ArrayList<ZipLocation>();
-	private ArrayList<ZipLocation> allZipLocations = new ArrayList<ZipLocation>();
+	private final ArrayList<ZipLocation> allZipLocations = new ArrayList<ZipLocation>();
 	private ArrayList<Chromosome> population = new ArrayList<Chromosome>();
 
 	private int currentGeneration = 0;
@@ -23,20 +23,24 @@ public class GeneticAlgorithmTravellingSalesman {
 	private int mostLocationsFound = 0;
 	private double leastTotalDistance = 1000000000D;
 
-	private double mutationRate = 0D;
-	private double currentAverageScore = 0D;
+	@SuppressWarnings("FieldCanBeLocal")
+    private double mutationRate = 0D;
+	@SuppressWarnings("FieldCanBeLocal")
+    private double currentAverageScore = 0D;
 	private double currentAverageLocationsFound = 0;
 	private Chromosome bestIndividual;
 	private int bestIndividualGeneration = 0;
 	// private Chromosome generationBestIndividual;
-	private boolean isRunning = true;
+	@SuppressWarnings({"FieldCanBeLocal", "CanBeFinal"})
+    private boolean isRunning = true;
 	// private int skyFoundCount = 0;
 	// private int netFoundCount = 0;
-	private int skynetFoundCount = 0;
+	@SuppressWarnings({"FieldCanBeLocal", "CanBeFinal"})
+    private int skynetFoundCount = 0;
 
-	double averageGenTimeMS = 0D;
+	private double averageGenTimeMS = 0D;
 
-	private NumberFormat nf = NumberFormat.getInstance();
+	private final NumberFormat nf = NumberFormat.getInstance();
 
 	public GeneticAlgorithmTravellingSalesman(Config config) {
 		allZipLocations.add(new ZipLocation("37501", "Memphis", "TN", 35.15, -90.05, "AAA"));
@@ -110,7 +114,8 @@ public class GeneticAlgorithmTravellingSalesman {
 			locsLoop: for (ZipLocation z : zipLocations) {
 				if (g.getValue().equals(z.getId())) {
 					solution += z.getCity() + " " + z.getState();
-					break locsLoop;
+                    //noinspection UnnecessaryLabelOnBreakStatement
+                    break locsLoop;
 				}
 			}
 
@@ -126,7 +131,7 @@ public class GeneticAlgorithmTravellingSalesman {
 
 	}
 
-	public void runGeneration() {
+	void runGeneration() {
 
 		currentGeneration++;
 
@@ -178,7 +183,7 @@ public class GeneticAlgorithmTravellingSalesman {
 
 		}
 
-		currentAverageScore = (double) totalScoreForGeneration / population.size();
+		currentAverageScore = totalScoreForGeneration / population.size();
 
 		if (currentAverageScore < bestAverageScore) {
 			bestAverageScore = currentAverageScore;
@@ -201,9 +206,9 @@ public class GeneticAlgorithmTravellingSalesman {
 
 		// out("Least Total Distance: " + leastTotalDistance);
 
-		double currentPeformance = 100 - ((currentAverageScore / bestAverageScore) - 1);
+		double currentPerformance = 100 - ((currentAverageScore / bestAverageScore) - 1);
 		
-		out("Current Performance: " + nf.format(currentPeformance) + "%");
+		out("Current Performance: " + nf.format(currentPerformance) + "%");
 		out("Gen's Avg Score: " + nf.format(currentAverageScore) + " / Best Avg Score: " + nf.format(bestAverageScore) + " / Best Score: "
 				+ nf.format(bestIndividual.getFitnessScore()));
 		out("Gen's Avg Locations found: " + currentAverageLocationsFound + " / Gen's Most Locations Found: " + mostGenerationLocationsFound);
@@ -214,7 +219,7 @@ public class GeneticAlgorithmTravellingSalesman {
 		System.out.println(output);
 	}
 
-	public void generateFirstGenerationChromosomes() {
+	void generateFirstGenerationChromosomes() {
 
 		// figure out what the length of the chromosome needs to be
 		// number of locations * CHROMOSOME_LENGTH_MULTIPLIER
@@ -233,7 +238,7 @@ public class GeneticAlgorithmTravellingSalesman {
 
 	}
 
-	public Gene generateRandomGene() {
+	Gene generateRandomGene() {
 		
 		/*
 		ArrayList<Gene> al = new ArrayList<Gene>();
@@ -283,9 +288,9 @@ public class GeneticAlgorithmTravellingSalesman {
 		return new Gene(out.toString());
 	}
 
-	public Chromosome scoreChromosomeFitness(Chromosome c) {
+	void scoreChromosomeFitness(Chromosome c) {
 
-		double output = 0D;
+		double output;
 
 		// weight for the worst case scenario for distance
 		double totalDist = (zipLocations.size() - 1) * 5000;
@@ -299,7 +304,7 @@ public class GeneticAlgorithmTravellingSalesman {
 		int actualLocationsLength;
 
 		int chromosomeLength = c.getLength();
-		int numberOfLocations = zipLocations.size();
+		//int numberOfLocations = zipLocations.size();
 
 		// boolean skyFound = false;
 		// boolean netFound = false;
@@ -322,35 +327,35 @@ public class GeneticAlgorithmTravellingSalesman {
 			 * 9999999999D; skynetFoundCount++; } }
 			 */
 
-			for (int locIndex = 0; locIndex < numberOfLocations; locIndex++) {
+            for (ZipLocation l : zipLocations) {
 
-				ZipLocation l = zipLocations.get(locIndex);
+                if (g.toString().equals(l.getId())) {
 
-				if (g.toString().equals(l.getId())) {
+                    boolean locationAlreadyFound = false;
+                    actualLocationsLength = actualLocations.size();
 
-					boolean locationAlreadyFound = false;
-					actualLocationsLength = actualLocations.size();
+                    falLoop:
+                    for (int falIndex = 0; falIndex < actualLocationsLength; falIndex++) {
 
-					falLoop: for (int falIndex = 0; falIndex < actualLocationsLength; falIndex++) {
+                        ZipLocation al = actualLocations.get(falIndex);
 
-						ZipLocation al = actualLocations.get(falIndex);
+                        if (al.getId().equals(l.getId())) {
+                            // dock the score for this
+                            output += config.getDUPLICATE_LOCATION_SCORE_PENALTY();
+                            locationAlreadyFound = true;
+                            //noinspection UnnecessaryLabelOnBreakStatement
+                            break falLoop;
+                        }
+                    }
 
-						if (al.getId().equals(l.getId())) {
-							// dock the score for this
-							output += config.getDUPLICATE_LOCATION_SCORE_PENALTY();
-							locationAlreadyFound = true;
-							break falLoop;
-						}
-					}
+                    if (!locationAlreadyFound) {
+                        actualLocations.add(l);
+                        c.addGeneToPhenotype(g);
+                    }
 
-					if (!locationAlreadyFound) {
-						actualLocations.add(l);
-						c.addGeneToPhenotype(g);
-					}
-
-					continue cLoop;
-				}
-			}
+                    continue cLoop;
+                }
+            }
 
 		}
 
@@ -369,7 +374,7 @@ public class GeneticAlgorithmTravellingSalesman {
 
 				ZipLocation previousLocation = actualLocations.get(previousLocationIndex);
 
-				double dist = getLatLongDistance(currentLocation.getLattitude(), currentLocation.getLongitude(), previousLocation.getLattitude(),
+				double dist = getLatLongDistance(currentLocation.getLatitude(), currentLocation.getLongitude(), previousLocation.getLatitude(),
 						previousLocation.getLongitude());
 
 				totalDist -= 5000;
@@ -387,10 +392,9 @@ public class GeneticAlgorithmTravellingSalesman {
 		 * ); }
 		 */
 
-		return c;
 	}
 
-	public ArrayList<Chromosome> selectChromosomesForMating(ArrayList<Chromosome> population) {
+	ArrayList<Chromosome> selectChromosomesForMating(ArrayList<Chromosome> population) {
 
 		Collections.sort(population);
 
@@ -407,7 +411,7 @@ public class GeneticAlgorithmTravellingSalesman {
 		return output;
 	}
 
-	public ArrayList<Chromosome> mateTopChromosomes(ArrayList<Chromosome> chromosomesForMating) {
+	ArrayList<Chromosome> mateTopChromosomes(ArrayList<Chromosome> chromosomesForMating) {
 
 		ArrayList<Chromosome> output = new ArrayList<Chromosome>();
 
@@ -424,7 +428,7 @@ public class GeneticAlgorithmTravellingSalesman {
 		// mating
 		double totalScore = 0;
 		
-		int chromosomesForMatingLength = chromosomesForMating.size();
+
 
 			/*
 		for (i = 0; i < chromosomesForMatingLength; i++) {
@@ -462,7 +466,6 @@ public class GeneticAlgorithmTravellingSalesman {
 			default:
 
 				c.setDistribution((c.getInvertedFitnessScore() / totalScore) * 1000);
-
 				break;
 
 			}
@@ -477,27 +480,29 @@ public class GeneticAlgorithmTravellingSalesman {
 
 		}
 
+        int distributedChromosomesForMatingLength = distributedChromosomesForMating.size();
+
 		while (output.size() < config.getNUMBER_OF_CHROMOSOMES_PER_GENERATION()) {
 
 			// pick a random number between 0 and length of chromosomesForMating
 			// - 1 for the first individual
-			int randomPick1 = randRange(0, chromosomesForMatingLength - 1);
+			int randomPick1 = randRange(0, distributedChromosomesForMatingLength - 1);
 
 			// now pick another random number between 0 and length of
-			// chromosomesForMating - 1 for the second individual
+			// distributedChromosomesForMating - 1 for the second individual
 			// but we have to make sure it isn't the same as the first pick
 			int randomPick2 = -1;
 
 			while (randomPick2 == -1) {
-				int randomPick3 = randRange(0, chromosomesForMatingLength - 1);
+				int randomPick3 = randRange(0, distributedChromosomesForMatingLength - 1);
 
 				if (randomPick3 != randomPick1)
 					randomPick2 = randomPick3;
 			}
 
 			// now get those chromosomes
-			Chromosome c1 = chromosomesForMating.get(randomPick1);
-			Chromosome c2 = chromosomesForMating.get(randomPick2);
+			Chromosome c1 = distributedChromosomesForMating.get(randomPick1);
+			Chromosome c2 = distributedChromosomesForMating.get(randomPick2);
 
 			// out("");
 			// out(c1.toString());

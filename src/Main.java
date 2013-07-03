@@ -9,8 +9,8 @@ import com.GeneticAlgorithmTravellingSalesman;
 
 public class Main {
 
-	public static final String propertiesFileName = "gats.properties";
-	public static final String appDirectoryName = "gats"; // you can change this
+	private static final String propertiesFileName = "gats.properties";
+	private static final String appDirectoryName = "gats"; // you can change this
 															// to .gats to make
 															// the directory
 															// hidden.
@@ -47,8 +47,8 @@ public class Main {
 		System.out.println();
 		System.out.println("Simulation will commence in... ");
 
-		// wait for 10 seconds
-		for (int i = 10; i >= 0; i--) {
+		// wait for 5 seconds
+		for (int i = 5; i >= 0; i--) {
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
@@ -72,7 +72,7 @@ public class Main {
 
 	}
 
-	public static File getSettingsDirectory() {
+	private static File getSettingsDirectory() {
 
 		String userHome = System.getProperty("user.home");
 
@@ -92,7 +92,7 @@ public class Main {
 
 	}
 
-	public static boolean doesPropertiesFileExist(File settingsDirectory) {
+	private static boolean doesPropertiesFileExist(File settingsDirectory) {
 
 		System.out.println("Properties File Location: "
 				+ settingsDirectory.toString() + "/" + propertiesFileName);
@@ -104,7 +104,7 @@ public class Main {
 
 	}
 
-	public static Properties readProperties(File settingsDirectory) {
+	private static Properties readProperties(File settingsDirectory) {
 
 		Properties prop = new Properties();
 
@@ -119,7 +119,7 @@ public class Main {
 
 	}
 
-	public static void writeProperties(File settingsDirectory, Properties prop) {
+	private static void writeProperties(File settingsDirectory, Properties prop) {
 
 		try {
 			prop.store(new FileOutputStream(settingsDirectory.toString() + "/"

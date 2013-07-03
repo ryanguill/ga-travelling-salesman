@@ -2,7 +2,7 @@ package com;
 
 public class Gene {
 
-	private String value;
+	private final String value;
 
 	public Gene(String value) {
 

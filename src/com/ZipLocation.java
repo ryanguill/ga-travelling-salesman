@@ -1,21 +1,21 @@
 package com;
 
-public class ZipLocation {
+class ZipLocation {
 
-	private String zipcode;
-	private String city;
-	private String state;
-	private double lattitude;
-	private double longitude;
-	private String id;
+	private final String zipcode;
+	private final String city;
+	private final String state;
+	private final double latitude;
+	private final double longitude;
+	private final String id;
 	private boolean selected = false;
 
-	public ZipLocation(String zipcode, String city, String state, double lattitude, double longitude, String id) {
+	public ZipLocation(String zipcode, String city, String state, double latitude, double longitude, String id) {
 
 		this.zipcode = zipcode;
 		this.city = city;
 		this.state = state;
-		this.lattitude = lattitude;
+		this.latitude = latitude;
 		this.longitude = longitude;
 		this.id = id;
 		this.selected = false;
@@ -34,8 +34,8 @@ public class ZipLocation {
 		return state;
 	}
 
-	public double getLattitude() {
-		return lattitude;
+	public double getLatitude() {
+		return latitude;
 	}
 
 	public double getLongitude() {
@@ -62,7 +62,7 @@ public class ZipLocation {
 		double dlng = lng2 - lng1;
 		double a = Math.sin(dlat / 2) * Math.sin(dlat / 2) + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dlng / 2) * Math.sin(dlng / 2);
 		double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-		;
+
 		return earthRadius * c;
 	}
 
@@ -77,7 +77,7 @@ public class ZipLocation {
 
 		long temp;
 
-		temp = Double.doubleToLongBits(lattitude);
+		temp = Double.doubleToLongBits(latitude);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		temp = Double.doubleToLongBits(longitude);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
@@ -114,7 +114,7 @@ public class ZipLocation {
 		} else if (!id.equals(other.id)) {
 			return false;
 		}
-		if (Double.doubleToLongBits(lattitude) != Double.doubleToLongBits(other.lattitude)) {
+		if (Double.doubleToLongBits(latitude) != Double.doubleToLongBits(other.latitude)) {
 			return false;
 		}
 		if (Double.doubleToLongBits(longitude) != Double.doubleToLongBits(other.longitude)) {

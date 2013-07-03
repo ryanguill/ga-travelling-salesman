@@ -3,11 +3,11 @@ package com;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Chromosome implements Comparable<Chromosome> {
+class Chromosome implements Comparable<Chromosome> {
 
 	private ArrayList<Gene> arrGenes;
 	private ArrayList<Gene> arrPhenotype;
-	private int chromosomeLength;
+	private final int chromosomeLength;
 	private double fitnessScore;
 	private double invertedScore;
 	private double distribution;
@@ -25,7 +25,7 @@ public class Chromosome implements Comparable<Chromosome> {
 
 	public String toString() {
 		StringBuilder out = new StringBuilder();
-		int i = 0;
+		int i;
 
 		for (i = 0; i < arrGenes.size(); i++) {
 			Gene tempGene = arrGenes.get(i);
@@ -87,7 +87,7 @@ public class Chromosome implements Comparable<Chromosome> {
 	}
 
 	public void setDistribution(double value) {
-		distribution = Math.floor(value);
+		distribution = StrictMath.ceil(value);
 	}
 
 	public double getDistribution() {
@@ -125,7 +125,7 @@ public class Chromosome implements Comparable<Chromosome> {
 
 	public String phenotypeToString() {
 		StringBuilder out = new StringBuilder();
-		int i = 0;
+		int i;
 
 		for (i = 0; i < arrPhenotype.size(); i++) {
 			Gene tempGene = arrPhenotype.get(i);
@@ -192,7 +192,7 @@ public class Chromosome implements Comparable<Chromosome> {
 		arOrder.add(3);
 		arOrder.add(4);
 
-		int i = 0;
+		int i;
 
 		for (i = 0; i < 4; i++) {
 			int randNum = randRange(0, arOrder.size() - 1);
@@ -235,7 +235,7 @@ public class Chromosome implements Comparable<Chromosome> {
 		return 0;
 	}
 
-	public static final int randRange(int low, int high) {
+	public static int randRange(int low, int high) {
 		return (int) (low + Math.floor(Math.random() * (high - low + 1)));
 	}
 
@@ -300,7 +300,8 @@ public class Chromosome implements Comparable<Chromosome> {
 		if (locationsFound != other.locationsFound) {
 			return false;
 		}
-		if (Double.doubleToLongBits(totalDistance) != Double.doubleToLongBits(other.totalDistance)) {
+        //noinspection RedundantIfStatement
+        if (Double.doubleToLongBits(totalDistance) != Double.doubleToLongBits(other.totalDistance)) {
 			return false;
 		}
 		return true;
